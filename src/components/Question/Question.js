@@ -7,7 +7,8 @@ export default function Question(props) {
   const answerElements = props.answers.map((answer, index) => (
       <Answer
           key={index}
-          answer={answer}
+          isAnswerClicked={answer.isClicked}
+          answer={answer.text}
       />
   ));
 
