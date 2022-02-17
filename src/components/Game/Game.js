@@ -15,7 +15,7 @@ export default function Game(props) {
             <div>
               {questionElements}
               <div className="button-wrapper">
-                <button className="check-answers-button">Check Answers</button>
+                <button className="check-answers-button">Check answers</button>
               </div>
             </div> :
             <LoadingSpinner />

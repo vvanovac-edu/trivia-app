@@ -12,4 +12,5 @@
 
 .question-answers {
   display: flex;
+  flex-wrap: wrap;
 }
