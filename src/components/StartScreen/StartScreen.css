@@ -38,6 +38,7 @@
   border: none;
   border-radius: 10px;
   user-select: none;
+  cursor: pointer;
 }
 
 .start-screen-button:focus {
