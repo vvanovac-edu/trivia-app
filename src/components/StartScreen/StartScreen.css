@@ -1,0 +1,49 @@
+.start-screen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.start-screen-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 400px;
+}
+
+.start-screen-title,
+.start-screen-description {
+  margin: 0 0 1.25rem;
+}
+
+.start-screen-title {
+  font-size: 2rem;
+}
+
+.start-screen-description {
+  font-size: 1.25rem;
+}
+
+.start-screen-button {
+  margin: 1.5rem 0 0;
+  width: 80%;
+  height: 50px;
+  background: #4D5B9E;
+  color: #F5F7FB;
+  font-size: 1.25rem;
+  font-family: 'Arvo', serif;
+  border: none;
+  border-radius: 10px;
+  user-select: none;
+}
+
+.start-screen-button:focus {
+  outline: none;
+}
+
+.start-screen-button:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
