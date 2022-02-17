@@ -5,13 +5,17 @@ import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import './Game.css';
 
 export default function Game(props) {
-  const questionElements = props.questionsData.map((questionData, index) => (
-      <Question key={index} questionData={questionData} />
+  const questionElements = props.quizData.map((question, index) => (
+    <Question
+        key={index}
+        question={question.question}
+        answers={['answer 1', 'answer 2', 'answer 3', 'answer 4']}
+    />
   ))
 
   return (
       <div className="game-container">
-        {props.questionsLoaded ?
+        {props.isQuizLoaded ?
             <div>
               {questionElements}
               <div className="button-wrapper">
