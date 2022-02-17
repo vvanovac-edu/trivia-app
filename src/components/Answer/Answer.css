@@ -12,6 +12,10 @@
   margin-right: 10px;
 }
 
+.answer-container:hover {
+  background-color: #D6DBF5;
+}
+
 .answer-container:last-child {
   margin-right: 0;
 }
