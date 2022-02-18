@@ -9,6 +9,7 @@ export default function Question(props) {
           key={index}
           isAnswerClicked={answer.isClicked}
           answer={answer.text}
+          answerClick={() => props.answerClick(props.questionID, answer.id)}
       />
   ));
 

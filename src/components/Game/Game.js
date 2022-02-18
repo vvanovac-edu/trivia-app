@@ -53,11 +53,31 @@ export default function Game(props) {
     }
   }, [props.isGameStarted])
 
+  const answerClick = (questionID, answerID) => {
+    setQuizData((prevQuizData) => {
+      return prevQuizData.map((question) => {
+        return question.id === questionID ?
+            {
+              ...question,
+              answers: question.answers.map((answer) => {
+                return answer.id === answerID ?
+                    {...answer, isClicked: !answer.isClicked} :
+                    {...answer, isClicked: false}
+              })
+
+            } :
+            question
+      })
+    })
+  }
+
   const questionElements = quizData.map((question, index) => (
       <Question
           key={index}
           question={question.question}
           answers={question.answers}
+          answerClick={answerClick}
+          questionID={question.id}
       />
   ))
 
